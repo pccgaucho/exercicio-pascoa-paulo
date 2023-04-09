@@ -4,46 +4,43 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
     <title>Página Principal</title>
 </head>
 <body class="container">
     <header class="container_cabecalho">
-        <nav class="navegação">
+        <nav class="navegacao">
             <a class="links" id="link_principal" href="#">Principal</a>
             <a class="links" id="link_cadastro" href="#">Cadastro</a>
         </nav>
-        <div class="titulo">Treinando</div>
+        <div class="p_texto" id="titulo">Treinando</div>
     </header>
     <div class="container_principal">
-        <aside></aside>
-        <main class="container_interacao">
-            <div class="conta">
-                <div class="entrada">
-                    <input class="inputs" id="numero01" type="text" placeholder="Digite um número">
-                    <input class="inputs" id="numero02" type="text" placeholder="Digite um número">
-                    <button class="btn" id="btn_somar">Somar</button>
-                </div>
-                <div class="resultados">
-                    <p class="texto_resultado">Resultado:</p>
-                    <p id="resultado_conta">0</p>
-                </div>
+        <main class="container_conta">
+            <div class="entradas">
+                <input class="inputs" id="numero01" type="text" placeholder="Digite um número">
+                <input class="inputs" id="numero02" type="text" placeholder="Digite um número">
+                <button class="btn" id="btn_somar">Somar</button>
             </div>
-            <div class="pokemon">
-                <div class="entrada">
-                    <input class="inputs" id="id_pokemon" type="text" placeholder="ID Pokemon">
-                    <button class="btn" id="btn_buscar">Buscar</button>
-                </div>
-                <div class="resultados">
-                    <p class="texto_resultado" id="nome_pk">Nome:</p>
-                    <img class="imagem" src="./imagens/imagem_icone.jpg" id="imagem">
-                </div>                
+            <div class="resultados">
+                <p class="p_texto" id="p_resultado">Resultado:</p>
+                <p class="p_texto" id="resultado_conta">0</p>
             </div>
         </main>
-        <aside></aside>
+        <main class="container_pokemon">        
+            <div class="entradas">
+                <input class="inputs" id="id_pokemon" type="text" placeholder="ID Pokemon">
+                <button class="btn" id="btn_buscar">Buscar</button>
+            </div>
+            <div class="resultados">
+                <p class="p_texto" id="nome_pk">Nome:</p>
+                <img class="imagem" src="./imagens/imagem_icone.jpg" id="imagem">
+            </div>                
+        </main>
     </div>
     <footer class="rodape">
-        <p id="p_rodape">Construído por:</p>
-        <p id="p_nome">Paulo Flores</p>
+        <p class="p_texto" id="p_rodape">Construído por:</p>
+        <p class="p_texto" id="p_nome">Paulo Flores</p>
     </footer>
 </body>
 </html>
