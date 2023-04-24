@@ -169,3 +169,32 @@ input[type=number] {
     -moz-appearance: textfield;
 }
 
+@media screen and (max-width: 640px) {
+    .container_cabecalho {
+        flex-direction: column-reverse;
+    }
+    .navegacao {
+        padding: 15px 20px;
+    }
+    .container_conta, .container_pokemon {
+        flex-direction: column;
+        width: 95%;
+    }
+    .inputs, .btn {
+        width: 95%;
+        margin-top: 10px;
+    }
+    .btn {
+        margin-bottom: 10px;
+    }
+    .resultados {
+        width: 95%; 
+    }
+    .entradas {
+        width: 95%;
+    }
+    #resultado_conta {
+        margin-bottom: 40px;
+    }
+}
+

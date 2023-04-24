@@ -165,7 +165,6 @@ html {
 }
 
 .rodape {
-
     background-color: var(--cor-amarelo);
     justify-content: center;
     border-radius: 10px;
@@ -191,6 +190,37 @@ html {
     display: flex;
     justify-content: center;
     flex-direction: column;   
+}
+
+@media screen and (max-width: 640px) {
+    .container_cabecalho {
+        flex-direction: column-reverse;
+    }
+    .navegacao {
+        padding: 15px 20px;
+    }
+    .rodape_vazio {
+        display: none;
+    }
+    .container_principal {
+        flex-direction: column;        
+    }
+    .imagem {
+        margin-top: 20px;
+        width: 40%;
+    }
+    #link_linkedin {
+        margin-top: 10px;
+    }
+    #link_github {
+        margin-bottom: 10px;
+    }
+    .formulario {
+        width: 90%;
+    }
+    .rodape_texto {
+        padding: 10px 0;
+    }
 }
 
 
